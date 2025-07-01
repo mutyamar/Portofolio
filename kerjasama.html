@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kerjasama</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="Home" href="kerjasama.html">Kerjasama</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Kerjasama</h1>
+    <section class="form-container">
+      <h2>Formulir Penawaran Kerjasama</h2>
+      <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" required placeholder="Masukkan nama lengkap" />
+
+        <label for="alamat">Alamat</label>
+        <input type="text" id="alamat" required placeholder="Masukkan alamat" />
+
+        <label for="wa">No. WA</label>
+        <input type="tel" id="wa" pattern="[0-9]{10,13}" required placeholder="Contoh: 085251038359" title="Masukkan nomor WA 10-13 digit angka" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="Contoh: email@domain.com" />
+
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jk" value="Laki-Laki" required /> Laki-Laki</label>
+          <label><input type="radio" name="jk" value="Perempuan" required checked /> Perempuan</label>
+        </div>
+
+        <label>Bidang Kerjasama</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="bidang" value="HR Specialist" required /> HR Specialist</label>
+          <label><input type="checkbox" name="bidang" value="HR Generalist" /> HR Generalist</label>
+          <label><input type="checkbox" name="bidang" value="HR Assisted" /> HR Assisted</label>
+        </div>
+
+        <label for="file">File Penawaran</label>
+        <input type="file" id="file" required />
+
+        <label for="tanggal">Tanggal Pelaksanaan</label>
+        <input type="date" id="tanggal" required />
+
+        <label for="domisili">Domisili</label>
+        <select id="domisili" required>
+          <option value="">-- Pilih Domisili --</option>
+          <option>Yogyakarta</option>
+          <option>Jakarta</option>
+          <option>Surabaya</option>
+        </select>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marini Mutyasari</p>
+  </footer>
+</body>
+</html>
